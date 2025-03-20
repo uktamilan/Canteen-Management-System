@@ -1,0 +1,255 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+.navbar {
+    background-color: maroon;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo */
+.navbar img.logo {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-grow: 1;
+    justify-content: flex-end;
+}
+
+.navbar li {
+    margin: 0 10px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color:#F8F9FA;
+    padding: 12px 24px; /* Same padding as the Get Connected button */
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    position: relative;
+}
+
+/* Hover Effect: Moves Up & Scales Like Get Connected Button */
+.navbar a:hover, .navbar a.active {
+    background-color: orange;
+    color: #002147;
+    transform: scale(1.05); /* Scaling Effect */
+    box-shadow: 0px 4px 10px rgba(255, 215, 0, 0.5); /* Glowing Effect */
+}
+.image-container {
+    position: absolute;
+    top: 25%; /* Moves it slightly up (5% higher than before) */
+    right: 1.5%;
+    left: 0.5%;
+    width: 450px;
+    height: 350px;
+}
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+ /* Order Button */
+         .order-btn {
+            background: #ff0000;
+            color: white;
+            padding: 15px 30px;
+            font-size: 22px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .order-btn:hover {
+            background: #cc0000;
+            transform: scale(1.1);
+        }
+
+/* Login Page Styling */
+.login-container {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-60%, -60%);
+    width: 300px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.8); /* White with 80% opacity */
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+
+.login-container h2 {
+    margin-bottom: 20px;
+}
+
+.login-container label {
+    display: block;
+    text-align: left;
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+.login-container input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.login-container button {
+    width: 100%;
+    background-color: #7a1524;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.login-container button:hover {
+    background-color: #5a101b;
+}
+/* Slideshow Styling */
+.slideshow-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.slides {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    object-fit: cover;
+}
+
+.active {
+    opacity: 1;
+}
+
+
+/* Slideshow Container */
+.slideshow-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    z-index: -1;
+}
+
+/* Background Slideshow Images */
+.slides {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Active Slide */
+.active {
+    opacity: 1;
+}
+
+
+/* Reset default margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Ensuring the page takes full viewport height */
+html, body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Pushes footer to the bottom when content is short */
+body {
+    min-height: 100vh;
+}
+
+/* Footer Styling */
+footer {
+    background: maroon;
+    color: white;
+    text-align: left;
+    padding: 20px 0;
+    width: 100%;
+    margin-top: auto;  /* Moves footer to the bottom */
+}
+
+/* Footer container */
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 10px 20px;
+}
+
+/* Footer text */
+.footer-content h2 {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.footer-content p {
+    font-size: 14px;
+    text-align: left;
+}
+
+/* Social Media Icons */
+.footer-social {
+    display: flex;
+    gap: 15px;
+}
+
+.footer-icon {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.footer-icon:hover {
+    transform: scale(1.1);
+}
+
+/* Footer Bottom */
+.footer-bottom {
+    margin-top: 10px;
+    font-size: 12px;
+    opacity: 0.8;
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canteen Menu</title>
+    <link rel="stylesheet" href="menu.css">
+    <script src="menu.js" defer></script>
+</head>
+<body>
+     <!-- Navbar -->
+     <div class="navbar">
+        <img src="food logo.png" alt="Logo" class="logo">
+        <ul>
+            
+            <li><a href="loginpg.html" class="login">LOGIN</a></li>
+            <li><a href="instruct.html" class="instruction">INSTRUCTIONS</a></li>
+            <li><a href="help.html" class="help">HELP🤝</a></li>
+        </ul>
+    </div>
+    <header>
+        <h1>🍽️ Canteen Menu</h1>
+        <div class="filter-buttons">
+            <button onclick="filterMenu('all')">All</button>
+            <button onclick="filterMenu('breakfast')">Breakfast</button>
+            <button onclick="filterMenu('lunch')">Lunch</button>
+            <button onclick="filterMenu('snacks')">Snacks</button>
+            <button onclick="filterMenu('drinks')">Drinks</button>
+        </div>
+    </header>
+
+    <section class="menu">
+        <div class="menu-item" data-category="breakfast">
+            <img src="idli.png" alt="Idli">
+            <h3>Idli</h3>
+            <p>Soft idlis served with flavorful sambar.</p>
+            <span>₹40</span>
+            <div class="quantity-control">
+                <button onclick="decreaseQuantity(this)">−</button>
+                <span class="quantity">0</span>
+                <button onclick="increaseQuantity(this)">+</button>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
+<footer>
+    <div class="footer-container">
+        <div class="footer-content">
+            <h2>Canteen Mangement System</h2>
+            <p>"Warning: Our food may cause extreme cravings!" 🍟💥</p>
+        </div>
+        <div class="footer-social">
+            <a href="https://www.facebook.com" target="_blank">
+                <img src="facebook.png" alt="Facebook" class="footer-icon">
+            </a>
+            <a href="https://www.twitter.com" target="_blank">
+                <img src="twitter.png" alt="Twitter" class="footer-icon">
+            </a>
+            <a href="https://www.instagram.com" target="_blank">
+                <img src="instagram.png" alt="Instagram" class="footer-icon">
+            </a>
+        </div>
+    </div>
+    <center>
+    <p class="footer-bottom">&copy; Sathyabama University @2025 | All Rights Reserved.</p>
+    </center>
+</footer>
